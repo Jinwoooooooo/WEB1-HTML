@@ -11,7 +11,7 @@
             background-size: 100% 145%;
             background-repeat: no-repeat;
         }
-        form {
+        .main {
             border: 1px solid rgb(212, 212, 212);
             width: 20%;
             height: 400px;
@@ -68,20 +68,21 @@
     </style>
 </head>
 <body>
-    <form>
+    <div class="main">
             <div class="title">로그인</div>
-                <div><input type="text" name="email" size="30" placeholder="이메일" ></div>
+                <div><input type="text" name="email" size="30" placeholder="이메일"></div>
                 <div><input type="password" name="password" size="30" placeholder="비밀번호" ></div>
                 <div class="bt_text">
-                <button type="submit" class="loginbt">
-                <span>로그인</span>
-            </button>
+                <a href="main.html">
+                    <button type="submit" class="loginbt">로그인</button>
+                </a>
             </div>
+
                 <div class="bt_text2">
-                <button type="submit" class="cancelbt">
-                <a href=index.html>취소</a>
-            </button>
-            </div>
-    </form>
+                    <a href=index.html>
+                        <button class="cancelbt">취소</button>
+                    </a>
+                </div> 
+    </div>
 </body>
 </html>
