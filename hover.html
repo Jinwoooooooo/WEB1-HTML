@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            background-color: rgb(84, 131, 194);
+            min-width: 200px;
+            padding: 30px;
+            box-shadow: 0px 20px 20px 0px gray;
+            display: none;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .btn-hover {
+            padding: 20px 40px 20px 40px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: rgb(255, 102, 81);
+            color: white;
+        }
+        .btn-hover:hover {
+            background-color: rgba(255, 101, 81, 0.788);
+        }
+        h1:hover {
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS:hover</h1>
+    <hr>
+    <div class="dropdown">
+        <span>마우스를 올려주세요.</span>
+        <div class="dropdown-content">
+            <p><a href="index.html">index.html</a></p>
+        </div>
+    </div>
+    <div>
+        <button class="btn-hover">Hello</button>
+    </div>
+</body>
+</html>
