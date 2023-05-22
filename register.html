@@ -265,7 +265,10 @@
             border: 1px solid rgba(206, 225, 142, 0.781);
         }
     }
-    @media all and (max-width:767px) {
+    @media all and (min-width:767px) {
+        * {
+            margin: 0 auto;
+        }
         body {
             background-color: rgb(206,225,142);
             background-image: none;
