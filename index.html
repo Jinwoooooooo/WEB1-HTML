@@ -4,25 +4,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -------------------------------------San-Serif-------------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+    <!-- -------------------------------------Serif-------------------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
+        * {
+            margin: 0 auto;
+        }
+        .header {
+            width: 100%;
+            height: 60px;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            background-color: #3C486B;
+        }
+        .class {
+            color: white;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .work {
+            color: white;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .contanier {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+        }
+        ul {
+            margin-top: 90px;
+            margin-left: 45px;
+            list-style: none;
+        }
+        li {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .left {
+            background-color: #ebebeb;
+            width: 50%;
+            height: 75vh;
+            overflow-y:scroll;
+        }
+        .right {
+            background-color: #ebebeb;
+            width: 50%;
+            height: 75vh;
+            overflow-y:scroll;
+        }
+        img {
+            width: 85%;
+        }
+        video {
+            width: 85%;
+        }
+        footer {
+            background-color: #d64747;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            text-align: justify;
+            height: 25vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        span {
+            font-size: 40px;
+        }
         a {
             text-decoration: none;
             color: black;
         }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            background-color: #d64747;
+            display: none;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover span {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <ol>
-        <li><a href="padding.html">0504 멘토링 패딩</a></li>
-        <li><a href="margin.html">0504 멘토링 마진</a></li>
-        <li><a href="header.html">0511 멘토링 헤더</a></li>
-        <li><a href="hover.html">0518 멘토링 호버</a></li>
-        <li><a href="mediaquery.html">0518 멘토링 미디어 쿼리</a></li>
-    </ol>
-    <ol>
-        <li><a href="login.html">0504 멘토링 과제 로그인 폼</a></li>
-        <li><a href="login.html">0511 멘토링 과제 헤더 사용하면서 클론코딩</a></li>
-    </ol>
+    <header class="header">
+        <div class="class">수업</div>
+        <div class="work">과제</div>
+    </header>
+    <div class="contanier">
+        <div class="left">
+            <ul>
+                <li><a href="padding.html">Padding</a></li>
+                <img src="Images/padding.png">
+                <li><a href="margin.html">Margin</a></li>
+                <img src="Images/margin.png">
+                <li><a href="header.html">Header</a></li>
+                <img src="Images/header.png">
+                <li><a href="hover.html">Hover</a></li>
+                <video autoplay loop src="Images/hover.mp4"></video>
+                <li><a href="mediaquery.html">Mediaquery</a></li>
+                <img src="Images/media1.png">
+                <img src="Images/media2.png">
+                <li><a href="animate.html">Animation</a></li>
+                <video autoplay loop src="Images/animate.mp4"></video>
+                <li><a href="animation.html">Animation Library</a></li>
+                <video autoplay loop src="Images/animation.mp4"></video>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="login.html">Login form</a></li>
+                <img src="Images/login.png">
+                <li><a href="main.html">Header and clone</a></li>
+                <video autoplay loop src="Images/clone.mp4"></video>
+                <li><a href="register.html">Mediaquery and Register form</a></li>
+                <img src="Images/register.png">
+                <img src="Images/register2.jpg">
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="dropdown">
+            <span>✏️</span>
+            <div class="dropdown-content">
+                <p>3월 22일 첫 수업부터 첫인상이 너무 좋았던 멘토님의 매혹에 걸려
+                   빠져나오지 못하고 프론트엔드가 너무 좋아져 버린 멘티 정진우입니다..
+                   <br>
+                   정규 수업 때도 프론트엔드가 가장 재밌고 그나마 제가 잘하는 과목이였는데
+                   멘토링도 같이 하게 되면서 실력 향상에 엄청난 도움이 됐고,
+                   <br> 
+                   멘토링 과제를 하면서
+                   특히 실력이 많이 올랐는데, 첫 과제부터 마지막 과제까지 코드를 보면 성장했다를
+                   확실하게 느낄 수 있었습니다!
+                   <br>
+                   집에서 과제하는 게 너무 재밌어서 새벽 6시까지 하다가 정규 수업은 빠지고 ㅋㅋ
+                   멘토링은 또 가고.. 
+                   <br>
+                   그만큼 재밌는 수업이고 좋아하는 수업이여서 멘토링만큼은 빼기 싫었습니다.
+                   <br>
+                   멘토님도 멘토링 하자마자 쉬는 시간 없이 정규 수업 들으러 가는 거 같았는데
+                   정말 피곤하셨을텐데
+                   <br>
+                   마지막 까지 수고 많으셨습니다 ! 그 동안 정말 잘 배웠습니다 !!
+                   <br>
+                   <br>
+                   마지막 과제는 명예의 전당 느낌쓰로다가 여태 한 거 다 올려봤습니다.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

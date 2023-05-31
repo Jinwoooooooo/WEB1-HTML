@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes slidein {
+            /* 시작 */
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            25% {
+                color: green;
+            }
+
+            50% {
+                color: red;
+            }
+            75% {
+                color: blue;
+            }
+            /* 끝 */
+            to {
+                margin-left: 0;
+                width: 100px;
+            }
+        }
+        @keyframes title {
+            25% {
+                color: green;
+            }
+
+            50% {
+                color: red;
+            }
+            75% {
+                color: blue;
+            }
+            100% {
+                color: rgb(255, 251, 0);
+            }
+        }
+        span {
+            /* 이름 */
+            animation-name: slidein;
+
+            /* 지속 시간 */
+            animation-duration: 3s;
+
+            /* 번갈아가면서 */
+            animation-direction: alternate;
+
+            /* 반복 횟수 */
+            animation-iteration-count: infinite;
+        }
+        p {
+            /* 이름 */
+            animation-name: slidein;
+
+            /* 지속 시간 */
+            animation-duration: 3s;
+        }
+        h1 {
+            animation-name: title;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+    <title>Animation</title>
+</head>
+<body>
+    <h1>CSS : 애니메이션</h1>
+    <hr>
+    <p>한 번 움직이는</p>
+    <span>계속 움직이는</span>
+</body>
+</html>
