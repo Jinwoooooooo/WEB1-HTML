@@ -1,0 +1,53 @@
+ul {
+    display: flex;
+    justify-content: center;
+}
+li {
+    list-style: none;
+    margin: 30px;
+    border: 1px solid black;
+}
+img {
+    width: 250px;
+}
+
+p {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 250px;
+    margin: 0 auto;
+}
+#contanier {
+    width: 100%;
+}
+.collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    overflow: auto;
+    background-color: red;
+}
+.hotel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    overflow: auto;
+    background-color: green;
+}
+.travel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    overflow: auto;
+    background-color: blue;
+}
